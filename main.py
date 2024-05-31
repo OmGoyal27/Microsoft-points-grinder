@@ -23,10 +23,11 @@ words = extract()
 starting_words = startt()
 
 def write(words, starting_words, length):       # Does everything, like type something and hit enter
+    random_start = random.choice(starting_words)
+    pg.typewrite(random_start)
+    pg.typewrite(" ")
+
     for x in range(length):
-        random_start = random.choice(starting_words)
-        pg.typewrite(random_start)
-        pg.typewrite(" ")
         random_word = random.choice(words)
         pg.typewrite(random_word)
         pg.typewrite(" ")
@@ -40,7 +41,7 @@ def main():                                     # Selects a random length and pe
     global words
     length = random.randint(1, 10)
     new_tab()
-    write(words, length)
+    write(words, starting_words, length)
 
 
 keyboard.on_press(on_right_ctrl)                 # Hooks the keyboard event

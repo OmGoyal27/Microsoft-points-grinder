@@ -6,7 +6,7 @@ import time
 import keyboard
 
 def extract():                                              # Extracts all the available words
-    path = Path("words.json")
+    path = Path("meanings.json")
     content = json.loads(path.read_text(encoding='utf-8'))
     return content
 
@@ -19,15 +19,11 @@ words = extract()
 startin_words = startt()
 
 def write(words, starting_words, length):                   # Performs the main function, i.e., to click and write words and press enter
-    pg.hotkey("ctrl", "a")
-    pg.hotkey("backspace")
-    random_startt = random.choice(starting_words)
-    pg.typewrite(random_startt)
-    pg.typewrite(" ")
-    for x in range(length):
-        random_word = random.choice(words)
-        pg.typewrite(random_word)
-        pg.typewrite(" ")
+    pg.hotkey("ctrl", "backspace")
+    pg.typewrite("What is the meaning of")
+
+    random_word = random.choice(words)
+    pg.typewrite(random_word)
     pg.hotkey("return")
 
 def main():                                                 # Initialises everything to clean up the mess a bit
@@ -36,7 +32,7 @@ def main():                                                 # Initialises everyt
     length = random.randint(1, 5)
     pg.click()
     write(words, startin_words, length)
-    time.sleep(3)
+    time.sleep(4)
 
 time.sleep(3)                                               # Waits for three seconds before starting the program, giving the user enough time to open to page
 while True:
