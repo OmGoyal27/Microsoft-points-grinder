@@ -3,11 +3,6 @@ import json
 import pyautogui as pg
 import random
 import time
-import keyboard
-
-def on_right_ctrl(event):                       # Checks to perform the main event
-    if event.name == 'right ctrl':
-        main()
 
 def extract():                                  # Extracts the words
     path = Path("words.json")
@@ -43,7 +38,12 @@ def main():                                     # Selects a random length and pe
     new_tab()
     write(words, starting_words, length)
 
+time.sleep(3)
 
-keyboard.on_press(on_right_ctrl)                 # Hooks the keyboard event
-
-input("Press enter to exit...")                  # Keeps the program running
+for i in range(100):
+    try:
+        main()
+        time.sleep(5)
+    except KeyboardInterrupt:
+        print("Bye...")
+        break
