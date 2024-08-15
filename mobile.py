@@ -18,10 +18,10 @@ def startt():                                               # Extracts all the s
 words = extract()
 startin_words = startt()
 
-def write(words, starting_words, length):                   # Performs the main function, i.e., to click and write words and press enter
-    pg.hotkey("ctrl", "backspace")
-    pg.typewrite("What is the meaning of")
-
+def write(words):                                           # Performs the main function, i.e., to click and write words and press enter
+    pg.hotkey("ctrl", "a")
+    pg.hotkey("backspace")
+    pg.typewrite("What is the meaning of ")
     random_word = random.choice(words)
     pg.typewrite(random_word)
     pg.hotkey("return")
@@ -29,9 +29,8 @@ def write(words, starting_words, length):                   # Performs the main 
 def main():                                                 # Initialises everything to clean up the mess a bit
     global words
     global startin_words
-    length = random.randint(1, 5)
     pg.click()
-    write(words, startin_words, length)
+    write(words)
     time.sleep(4)
 
 time.sleep(3)                                               # Waits for three seconds before starting the program, giving the user enough time to open to page
