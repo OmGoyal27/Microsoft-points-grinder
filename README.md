@@ -6,5 +6,7 @@ the add_start file helps you to add words in the start.json file easily. Type sa
 The add_meaning.py file helps you add words for search of meaning of words. It is only available for mobile.py file.
 The printt.py file prints all the words in the words.json file.
 
+Ain't it pretty cool huh?
+
 Disclaimer- This project is for educational purposes only. Do not use it to grind points. Earn your points honestly. Use it at your own risk.
 -
