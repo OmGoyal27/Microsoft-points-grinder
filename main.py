@@ -3,6 +3,7 @@ import json
 import pyautogui as pg
 import random
 import time
+import webbrowser
 
 
 SLEEP_TIME_PER_TAB = 3      # Adjust this as per your system performance.
@@ -53,6 +54,8 @@ def main():                                     # Selects a random length and pe
     time.sleep(4)
     Interact.close_tab()
 
+time.sleep(SLEEP_TIME_PER_TAB)
+webbrowser.open("https://rewards.bing.com/pointsbreakdown")
 time.sleep(SLEEP_TIME_PER_TAB)
 
 for i in range(NUMBER_OF_SEARCHES):
