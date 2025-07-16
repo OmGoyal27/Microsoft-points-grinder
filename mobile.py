@@ -6,7 +6,7 @@ import time
 import keyboard
 
 def extract():                                              # Extracts all the available words
-    path = Path("meanings.json")
+    path = Path("words.json")
     content = json.loads(path.read_text(encoding='utf-8'))
     return content
 
