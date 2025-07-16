@@ -215,7 +215,9 @@ We welcome contributions! Please follow these steps:
 
 ## 📄 License
 
-This project is provided "as-is" for educational purposes. Users are responsible for ensuring their usage complies with all applicable terms of service, local laws, and platform regulations.
+This project is licensed under the MIT License - see [LICENCE.txt](LICENCE.txt) for more details.
+
+**Important Note**: While this software is open source under the MIT License, users are still responsible for ensuring their usage complies with the terms of service of any platforms they interact with. The license does not grant permission to violate third-party terms of service or engage in prohibited activities.
 
 ## 🛡️ Ethical Guidelines
 
