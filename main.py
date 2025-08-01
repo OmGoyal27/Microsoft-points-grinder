@@ -11,12 +11,12 @@ NUMBER_OF_SEARCHES = 31       # Adjust this as per your wish.
 
 class Data():
     def extract():                                  # Extracts the words
-        path = Path("words.json")
+        path = Path("examples/words.json")
         content = json.loads(path.read_text(encoding='utf-8'))
         return content
 
     def startt():                                   # Extracts the starting words
-        path = Path("start.json")
+        path = Path("examples/start.json")
         content = json.loads(path.read_text(encoding='utf-8'))
         return content
 
