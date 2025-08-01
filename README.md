@@ -55,8 +55,8 @@ points_redeemer/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/OmGoyal27/points_redeemer.git
-   cd points_redeemer
+   git clone https://github.com/OmGoyal27/Microsoft-points-grinder
+   cd Mictosoft-points-grinder
    ```
 
 2. **Install dependencies**:
