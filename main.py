@@ -25,7 +25,7 @@ starting_words = Data.startt()
 
 
 
-class Interact():
+class InteractWithBrowser():
 
     def new_tab():                                   # Opens a new tab
         pg.hotkey("ctrl", "t")
@@ -49,10 +49,10 @@ class Interact():
 def main():                                     # Selects a random length and perform the grinding
     global words
     length = random.randint(1, 10)
-    Interact.new_tab()
-    Interact.write(words, starting_words, length)
+    InteractWithBrowser.new_tab()
+    InteractWithBrowser.write(words, starting_words, length)
     time.sleep(4)
-    Interact.close_tab()
+    InteractWithBrowser.close_tab()
 
 time.sleep(SLEEP_TIME_PER_TAB)
 webbrowser.open("https://rewards.bing.com/pointsbreakdown")
