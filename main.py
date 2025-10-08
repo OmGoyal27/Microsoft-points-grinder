@@ -4,6 +4,7 @@ import pyautogui as pg
 import random
 import time
 import webbrowser
+import win10toast
 
 
 SLEEP_TIME_PER_TAB = 3      # Adjust this as per your system performance.
@@ -65,3 +66,6 @@ for i in range(NUMBER_OF_SEARCHES):
     except KeyboardInterrupt:
         print("Bye...")
         break
+
+toaster = win10toast.ToastNotifier()
+toaster.show_toast("Points Redeemer", "Task Completed!", duration=10)
