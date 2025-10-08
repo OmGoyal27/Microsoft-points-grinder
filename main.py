@@ -7,7 +7,7 @@ import webbrowser
 
 
 SLEEP_TIME_PER_TAB = 3      # Adjust this as per your system performance.
-NUMBER_OF_SEARCHES = 31       # Adjust this as per your wish.
+NUMBER_OF_SEARCHES = 20       # Adjust this as per your wish.
 
 class Data():
     def extract():                                  # Extracts the words
