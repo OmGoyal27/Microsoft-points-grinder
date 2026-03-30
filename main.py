@@ -56,7 +56,7 @@ def main():                                     # Selects a random length and pe
     InteractWithBrowser.close_tab()
 
 time.sleep(SLEEP_TIME_PER_TAB)
-webbrowser.open("https://rewards.bing.com/pointsbreakdown")
+webbrowser.open("https://rewards.bing.com/earn")
 time.sleep(SLEEP_TIME_PER_TAB)
 
 for i in range(NUMBER_OF_SEARCHES):
