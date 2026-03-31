@@ -162,7 +162,7 @@ length = random.randint(1, 10)  # Adjust min/max word count
 
 ## 📊 JSON Database Formats
 
-Checkout `exmamples` folder for it.
+Checkout `examples` folder for it.
 
 ## 🚨 Important Considerations
 
