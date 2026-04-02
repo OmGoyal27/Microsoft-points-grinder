@@ -55,17 +55,21 @@ def do_a_search():                                     # Selects a random length
     time.sleep(4)
     InteractWithBrowser.close_tab()
 
-time.sleep(SLEEP_TIME_PER_TAB)
-webbrowser.open("https://rewards.bing.com/earn")
-time.sleep(SLEEP_TIME_PER_TAB)
+def main():
+    time.sleep(SLEEP_TIME_PER_TAB)
+    webbrowser.open("https://rewards.bing.com/earn")
+    time.sleep(SLEEP_TIME_PER_TAB)
 
-for i in range(NUMBER_OF_SEARCHES):
-    try:
-        do_a_search()
-        time.sleep(0.5)
-    except KeyboardInterrupt:
-        print("Bye...")
-        break
+    for i in range(NUMBER_OF_SEARCHES):
+        try:
+            do_a_search()
+            time.sleep(0.5)
+        except KeyboardInterrupt:
+            print("Bye...")
+            break
 
-toaster = win10toast.ToastNotifier()
-toaster.show_toast("Points Redeemer", "Task Completed!", duration=10)
+    toaster = win10toast.ToastNotifier()
+    toaster.show_toast("Points Redeemer", "Task Completed!", duration=10)
+
+if __name__ == "__main__":
+    main()
