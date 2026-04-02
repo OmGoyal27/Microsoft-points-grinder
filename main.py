@@ -47,7 +47,7 @@ class InteractWithBrowser():
             pg.typewrite(" ")
         pg.hotkey("return")
 
-def main():                                     # Selects a random length and perform the grinding
+def do_a_search():                                     # Selects a random length and perform the grinding
     global words
     length = random.randint(1, 10)
     InteractWithBrowser.new_tab()
@@ -61,7 +61,7 @@ time.sleep(SLEEP_TIME_PER_TAB)
 
 for i in range(NUMBER_OF_SEARCHES):
     try:
-        main()
+        do_a_search()
         time.sleep(0.5)
     except KeyboardInterrupt:
         print("Bye...")
