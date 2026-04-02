@@ -24,8 +24,6 @@ class Data():
 words = Data.extract()
 starting_words = Data.startt()
 
-
-
 class InteractWithBrowser():
 
     def new_tab():                                   # Opens a new tab
